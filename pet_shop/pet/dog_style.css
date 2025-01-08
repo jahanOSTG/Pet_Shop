@@ -1,0 +1,130 @@
+/* dog_style.css */
+
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #FFF;
+}
+
+
+.container {
+    max-width: 1000px;
+    margin: 20px auto; /* Center container with some space */
+    padding: 20px;
+    display: flex; /* Flexbox to align items */
+    flex-direction: column; /* Column-wise layout */
+    gap: 20px; /* Space between cards */
+}
+
+/* Form label styles */
+.form-label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input field styles */
+.input-field {
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 14px;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.input-field:focus {
+    background-color: #fff;
+    border-color: #6f4f1e;
+}
+
+/* Button styles */
+.btn-custom {
+    background-color: #ff7f50;
+    color: #ffffff;
+    border-radius: 50px;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-custom:hover {
+    background-color: #ff6347;
+    transform: scale(1.05);
+}
+
+.btn-custom:focus {
+    outline: none;
+    box-shadow: 0 0 5px #ff7f50;
+}
+
+/* Bird Information Card */
+.card {
+    border: 2px solid #6f4f1e; /* Adding a border around the card */
+    border-radius: 15px; /* Rounded corners for the card */
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    max-width: 300px; /* Ensures card width is consistent */
+    width: 100%; /* Make sure the cards fill the space equally */
+    height: auto; /* Let card adjust based on content */
+    margin: 0 auto; /* Center the cards */
+}
+
+.card-body {
+    padding: 20px;
+    border-radius: 15px; /* Rounded corners */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Ensure the card's body takes full height */
+}
+
+.card-title {
+    font-size: 18px; /* Uniform font size for title */
+    font-weight: bold;
+    margin-bottom: 10px;
+    line-height: 1.5; /* Improve readability */
+}
+
+.card-text {
+    font-size: 14px; /* Uniform size for the text */
+    margin-bottom: 10px;
+    line-height: 1.6; /* Improve readability */
+}
+
+.card-body p {
+    margin-bottom: 8px;
+}
+
+/* Ensure all information inside the card has the same size and consistent look */
+.card-body .card-text, .card-body .card-title {
+    font-size: 14px;  /* Set font size to be consistent */
+}
+
+.card-body .card-text {
+    line-height: 1.6; /* Improve readability with line-height */
+}
+
+/* Button inside the card */
+.card-body .btn {
+    margin-top: 10px;
+    font-size: 16px;
+    background-color: aqua;
+    color: black;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 25px; /* Round button */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card-body .btn:hover {
+    background-color: #e0f714;
+}

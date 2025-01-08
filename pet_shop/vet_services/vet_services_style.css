@@ -1,0 +1,157 @@
+/* General Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(../image/sad_dog.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #f8f9fa;
+    color: #2d2d2d; /* A softer dark tone for text */
+}
+
+/* Container for a Centralized Layout */
+
+/* Container for a Centralized Layout */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.7); /* Increased transparency by reducing alpha value */
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Headings with Unique Style */
+h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ff5733; /* Vibrant coral color */
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3); /* Adds emphasis */
+}
+
+/* Service Items with Stylish Hover Effects */
+.service-item {
+    background: linear-gradient(to bottom right, #ffe5b4, #ffcccb); /* Light peach and pink */
+    border: 3px solid #ff5733; /* Match theme color */
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.5s ease, box-shadow 0.5s ease, background-color 0.5s ease;
+    padding: 20px;
+    max-width: 350px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.service-item:hover {
+    transform: scale(1.1) rotate(2deg); /* Unique hover effect */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    background-color: #ffe5b4; /* Brighter peach */
+}
+
+/* Service Item Headings */
+.service-item h3 {
+    font-size: 1.8rem;
+    color: #2d2d2d;
+    margin-bottom: 15px;
+}
+
+/* Service Item Paragraph */
+.service-item p {
+    font-size: 1rem;
+    color: #4f4f4f;
+    margin-bottom: 20px;
+}
+
+/* Buttons with Modern Style */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-dark {
+    border: 2px solid #343a40;
+    color: #343a40;
+    background: none;
+}
+
+.btn-outline-dark:hover {
+    background-color: #343a40;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.btn-primary {
+    background-color: #ff5733; /* Coral color for primary button */
+    color: #fff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #d8451b; /* Slightly darker coral */
+    transform: scale(1.1);
+}
+
+.btn-warning {
+    background-color: #ffc107; /* Bright yellow for warning button */
+    color: #343a40;
+    border: none;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+    transform: scale(1.1);
+}
+
+/* Footer with Enhanced Look */
+footer {
+    background: linear-gradient(to right, #ff5733, #ffc107);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.15);
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #000;
+}
+
+/* Responsive Design Enhancements */
+@media (max-width: 768px) {
+    .service-item {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}

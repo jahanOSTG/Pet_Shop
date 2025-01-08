@@ -1,0 +1,43 @@
+
+.hero-section {
+    background: url('dog-full-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    color: rgb(69, 23, 23);
+    position: relative;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+}
+.btn-spacing a {
+    margin-right: 10px; /* Add space between the buttons */
+}
+
+.bottom-left-gif {
+    position: fixed;
+    bottom: 10px;
+    left: 20px;
+    z-index: 20; /* Ensures visibility */
+  }
+  
+  .bottom-left-gif img {
+    width: 200px; /* Adjust size as needed */
+    height: 45px;
+  }
+
+.hero-section img {
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+
+
+footer {
+    font-size: 0.9rem;
+    color: #333;
+}

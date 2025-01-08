@@ -1,0 +1,99 @@
+/* General styling for the body */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('../image/pet4.jpg') ;
+    background-size: cover;
+    color: #ea0505;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+/* Profile container */
+.profile-container {
+    background: rgba(255, 255, 255, 0.5); /* Glassmorphism effect */
+    backdrop-filter: blur(10px); /* Blurring background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Heading Style */
+.profile-container h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Label and input fields */
+.profile-container label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #555;
+}
+
+.profile-container input[type="text"],
+.profile-container input[type="file"],
+.profile-container input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-size: 14px;
+}
+
+/* Button to submit the form */
+.profile-container input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #FFD700;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.profile-container input[type="submit"]:hover {
+    background-color: #FFBF00;
+}
+
+/* Profile Picture Styling */
+.profile-container img {
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+/* Styling for the profile picture display */
+.profile-container p {
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .profile-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .profile-container h2 {
+        font-size: 20px;
+    }
+
+    .profile-container input[type="submit"] {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,85 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('../image/1.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #FFF;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: rgba(255, 251, 234, 0.9);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    text-shadow: 3px 3px 8px black;
+}
+
+.hero-content span {
+    color: yellow;
+    text-shadow: 3px 3px 5px black;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    color: #FFFBEA;
+}
+
+.hero-content .btn {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+/* Objectives Section */
+.objectives {
+    padding: 50px 0;
+    background-color: rgba(255, 251, 234, 0.9);
+    color: #333;
+}
+
+.objectives h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: #222;
+}
+
+.objectives .col-md-4 {
+    margin-bottom: 20px;
+}
+
+.objectives .col-md-4 h4 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+
+.objectives .col-md-4 p {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+/* Footer */
+.footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px 0;
+    color: #FFFBEA;
+    font-size: 1rem;
+}

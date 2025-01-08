@@ -1,0 +1,79 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+.styled-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.styled-form label {
+    font-weight: bold;
+    color: #555;
+}
+
+.styled-form input, .styled-form textarea, .styled-form button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+}
+
+.styled-form input:focus, .styled-form textarea:focus {
+    border-color: #6200ea;
+}
+
+.styled-form button {
+    background-color: #6200ea;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.styled-form button:hover {
+    background-color: #3700b3;
+}
+
+.pet-list {
+    margin-top: 30px;
+}
+
+.pet-card {
+    background: #f4f4f4;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pet-card img {
+    max-width: 100px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+.pet-card h3 {
+    color: #6200ea;
+}
+
+.pet-card p {
+    color: #333;
+}

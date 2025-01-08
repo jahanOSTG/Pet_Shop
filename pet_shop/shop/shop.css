@@ -1,0 +1,222 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', Arial, sans-serif; /* Modern font */
+  background-color: #ff8c00; /* Orange background */
+  margin: 0;
+  padding: 0;
+  color: #333; /* General text color */
+}
+
+/* Header Navigation Bar */
+.navbar {
+  position: relative; /* Ensure proper stacking */
+  z-index: 1001; /* High z-index for visibility */
+  background-color: #fff; /* Clean white background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.navbar-brand i {
+  font-size: 1.8rem;
+  color: #ff6347; /* Tomato red for fun */
+  margin-right: 5px;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #FFD700; /* Gold color on hover */
+}
+
+/* Top-Right Corner PNG */
+.top-right-image {
+  position: fixed;
+  top: 50px;
+  right: 5px;
+  z-index: 1; /* Keeps it visible */
+}
+
+.top-right-image img {
+  width: 100px; /* Adjust size as needed */
+  height: auto;
+}
+
+/* Bottom-Left Corner GIF */
+.bottom-left-gif {
+  position: fixed;
+  bottom: 10px;
+  left: 20px;
+  z-index: 15; /* Ensures visibility */
+}
+
+.bottom-left-gif img {
+  width: 100px; /* Adjust size as needed */
+  height: auto;
+}
+
+/* Shop Title */
+.shop-title {
+  font-size: 48px;
+  font-family: 'Poppins', sans-serif;
+  color: #fff; /* White text for contrast */
+  text-align: center;
+  background: linear-gradient(90deg, #ff6347, #ff4500); /* Modern gradient */
+  padding: 15px 20px;
+  border-radius: 12px;
+  margin: 20px auto;
+  width: fit-content;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Shop Container */
+.shop-container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between items */
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three cards in a row */
+  gap: 30px;
+  justify-items: center;
+}
+
+/* Product Card */
+.product-card {
+  background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 250px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+    z-index: 500;
+    
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.product-card:hover::before {
+  opacity: 1; /* Show overlay */
+}
+
+/* Product Image */
+.product-image {
+  width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Product Details */
+.product-details {
+  font-size: 1.3rem;
+    margin: 8px 0;
+    font-weight: bold;
+    color: #333;
+}
+
+
+/* Product Name */
+.product-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+  line-height: 1.3;
+}
+
+/* Thin Line between Product Name and Price */
+.product-name + .product-price {
+  border-top: 1px solid #ccc; /* Thin border */
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+/* Product Price */
+.product-price {
+  font-size: 20px;
+  color: #e74c3c; /* Red for prices */
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+/* Buy Now Button */
+.buy-now-btn {
+  background-color: #27ae60; /* Green for Buy Now */
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  align-self: center;
+  margin-bottom: 15px;
+}
+
+.buy-now-btn:hover {
+  background-color: #2ecc71; /* Lighter green on hover */
+  transform: scale(1.05);
+}
+
+/* Sticky Cart Button */
+.sticky-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ff4500;
+  color: white;
+  padding: 12px 25px;
+  font-size: 18px;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  z-index: 1000;
+}
+
+.sticky-btn:hover {
+  background-color: #ff6347;
+  transform: scale(1.1);
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .product-grid {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  .shop-title {
+      font-size: 36px;
+      padding: 10px 15px;
+  }
+
+  .buy-now-btn {
+      font-size: 14px;
+      padding: 8px 16px;
+  }
+
+  .sticky-btn {
+      font-size: 16px;
+      padding: 10px 20px;
+  }
+}

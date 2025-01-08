@@ -1,0 +1,85 @@
+/* General styling for the page */
+/* General styling for the page */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #00b0ff, #003366); /* Blue gradient background */
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Ensures full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center the content vertically */
+    position: relative; /* Needed for the absolute positioning of the button */
+}
+
+/* Container (card) styling */
+.container {
+    width: 80%;
+    margin-top: 50px; /* Adds space from the top of the page */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Button styling */
+.back-button {
+    position: absolute;
+    bottom: 20px; /* Places the button 20px from the bottom */
+    right: 20px; /* Places the button 20px from the right */
+    padding: 10px 20px;
+    background-color: #003366; /* Dark blue background */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none; /* Remove underline */
+    text-align: center;
+}
+
+.back-button:hover {
+    background-color: #00b0ff; /* Light blue on hover */
+    cursor: pointer;
+}
+
+
+/* Heading styling */
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}

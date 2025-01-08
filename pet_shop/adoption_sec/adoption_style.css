@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #FFD700;
+}
+
+/* Categories and Filters */
+.categories,
+.filters,
+.pet-profiles,
+.pet-owner-form {
+    margin-bottom: 30px;
+}
+
+.categories ul {
+    list-style: none;
+    padding: 0;
+    color: #FFFFFF;
+}
+
+.categories ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.categories ul li a {
+    text-decoration: none;
+    color: #ddff00;
+    font-weight: bold;
+}
+
+.filters form input,
+.filters form select,
+.filters form button {
+    margin-right: 10px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.filters form button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.filters form button:hover {
+    background-color: #218838;
+}
+
+/* Pet Profiles Section */
+.pet-profiles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.profile {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    width: calc(50% - 10px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile img {
+    width: 100%; /* Ensure responsiveness */
+    max-width: 150px; /* Limit the maximum size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Adopt Button */
+.adopt-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.adopt-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Pet Owner Form */
+.pet-owner-form form input,
+.pet-owner-form form textarea,
+.pet-owner-form form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.pet-owner-form form button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.pet-owner-form form button:hover {
+    background-color: #218838;
+}
